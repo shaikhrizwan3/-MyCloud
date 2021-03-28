@@ -1,9 +1,20 @@
+
+
 #################################
 S3: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html
 #################################
 
-Disable --- Block all Public Access
-Add Plicy
+Disable --- Block Public Access & Add Policy
+
+Step 1: Edit S3 Block Public Access settings
+Step 2: Add a bucket policy
+
+Choose Bucket
+Choose Permissions.
+Under Block public access (bucket settings), choose Edit.
+Clear Block all public access, and choose Save changes
+Add Policy
+
 {
     "Version": "2012-10-17",
     "Statement": [
