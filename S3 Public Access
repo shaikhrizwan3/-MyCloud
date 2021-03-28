@@ -1,0 +1,22 @@
+#################################
+S3: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html
+#################################
+
+Disable --- Block all Public Access
+Add Plicy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ]
+        }
+    ]
+}
